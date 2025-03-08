@@ -15,6 +15,8 @@ FROM ghcr.io/carbonclone/workstation:latest
 
 COPY build.sh /tmp/build.sh
 
+COPY files /
+
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
     ostree container commit
