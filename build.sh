@@ -11,3 +11,5 @@ systemctl enable podman.socket
 dnf5 -y install libappindicator-gtk3
 curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64" && install -c -m 0755 devpod /usr/local/bin && rm -f devpod
 
+# Install github-cli
+dnf5 -y install gh
