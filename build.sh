@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Update release file
+sed -i -e 's/ID=silverblue/ID=developer/g' /usr/lib/os-release
+
 set -ouex pipefail
 
 systemctl enable podman.socket
