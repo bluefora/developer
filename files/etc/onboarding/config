@@ -1,0 +1,24 @@
+#!/bin/bash
+
+flatpaks[development]="Choose Development Applications"
+typeset -A development
+development=(
+	[com.vscodium.codium]="VSCodium"
+	[io.github.shiftey.Desktop]="Github Desktop"
+	[org.sqlitebrowser.sqlitebrowser]="SQLite Browser"
+	#[com.github.tchx84.Flatseal]="FlatSeal"
+	[net.blockbench.Blockbench]="BlockBench"
+	[org.gnome.Boxes]="Gnome Boxes"
+)
+
+tweaks[textEditor-settings]="Text Editor Settings"
+function tweak-textEditor-settings() {
+	gsettings org.gnome.TextEditor highlight-current-line true
+	gsettings org.gnome.TextEditor restore-session false
+	gsettings org.gnome.TextEditor show-grid false
+	gsettings org.gnome.TextEditor show-line-numbers true
+	gsettings org.gnome.TextEditor show-map true
+	gsettings org.gnome.TextEditor style-variant 'dark'
+	gsettings org.gnome.TextEditor use-system-font true
+	gsettings org.gnome.TextEditor tab-width 'uint32 4'
+}
