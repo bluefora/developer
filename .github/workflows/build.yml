@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '00 20 * * *'  # 05:30am UTC everyday
+    - cron: '15 4 * * *'  # 4:15 - 5 minutes after carbonclone/workstation
   push:
     branches:
       - main
