@@ -13,3 +13,6 @@ curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/de
 
 # Install github-cli
 dnf5 -y install gh
+
+# Istall composer
+dnf5 -y install composer
