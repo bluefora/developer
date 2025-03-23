@@ -15,7 +15,7 @@ FROM ghcr.io/carbonos/workstation:latest
 
 COPY build.sh /tmp/build.sh
 
-COPY files /
+COPY rootcopy /
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
