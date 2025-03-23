@@ -1,4 +1,4 @@
-FROM ghcr.io/carbonos/workstation:latest
+FROM ghcr.io/carbonux/workstation:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
