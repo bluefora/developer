@@ -6,6 +6,9 @@ sed -i -e 's/Bluefora Linux 41 (Workstation Edition)/Bluefora Linux 41 (Develope
 
 set -ouex pipefail
 
+# Update dconf
+dconf update
+
 systemctl enable podman.socket
 
 # Setup DevPod
