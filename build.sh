@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # Update release file
-sed -i -e 's/ID=silverblue/ID=developer/g' /usr/lib/os-release
-sed -i -e 's/Silverblue/Bluefora/g' /usr/lib/os-release
-sed -i -e 's/Fedora Linux 41 (Workstation Edition)/Bluefora Linux 41 (Developer Edition)/g' /usr/lib/os-release
-sed -i -e 's/DEFAULT_HOSTNAME="fedora"/DEFAULT_HOSTNAME="bluefora"/g' /usr/lib/os-release
+sed -i -e 's/ID=workstation/ID=developer/g' /usr/lib/os-release
+sed -i -e 's/Bluefora Linux 41 (Workstation Edition)/Bluefora Linux 41 (Developer Edition)/g' /usr/lib/os-release
 
 set -ouex pipefail
 

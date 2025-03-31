@@ -6,7 +6,7 @@ development=(
 	[com.vscodium.codium]="VSCodium"
 	[io.github.shiftey.Desktop]="Github Desktop"
 	[org.sqlitebrowser.sqlitebrowser]="SQLite Browser"
-	#[com.github.tchx84.Flatseal]="FlatSeal"
+	[com.github.tchx84.Flatseal]="FlatSeal"
 	[net.blockbench.Blockbench]="BlockBench"
 	[org.gnome.Boxes]="Gnome Boxes"
 )
