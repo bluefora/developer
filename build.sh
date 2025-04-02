@@ -18,5 +18,8 @@ curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/de
 # Install github-cli
 dnf5 -y install gh
 
-# Istall composer
+# Install composer
 dnf5 -y install composer
+
+# Ouch, i need an AMD card
+dnf5 -y install akmod-nvidia-470xx
