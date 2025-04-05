@@ -20,9 +20,3 @@ dnf5 -y install gh
 
 # Install composer
 dnf5 -y install composer
-
-# Ouch, i need an AMD card
-dnf5 -y install \
-  https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-#dnf5 -y install akmod-nvidia-470xx # We will have to layer it :(
