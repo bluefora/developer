@@ -2,7 +2,7 @@
 
 # Update release file
 sed -i -e 's/ID=workstation/ID=developer/g' /usr/lib/os-release
-sed -i -e 's/Bluefora Linux 41 (Workstation Edition)/Bluefora Linux 41 (Developer Edition)/g' /usr/lib/os-release
+sed -i -e 's/(Workstation Edition)/(Developer Edition)/g' /usr/lib/os-release
 
 set -ouex pipefail
 
